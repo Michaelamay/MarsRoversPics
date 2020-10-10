@@ -1,0 +1,77 @@
+    /*
+            Stylized background borrowed from Nazar The Vis Azhar, via https://codepen.io/NazarTheVis/pen/zqXMqP
+         */
+         /* @import "susy"; */
+         /* @import "compass/reset"; */
+
+         .stars,
+         .twinkling,
+         .clouds {
+             position: absolute;
+             display: block;
+             top: 0;
+             bottom: 0;
+             left: 0;
+             right: 0;
+             width: 100%;
+             height: 100%;
+         }
+
+         .stars {
+             z-index: 0;
+             background: #000 url("https://image.ibb.co/mjnygo/stars.png") repeat top center;
+         }
+
+         .twinkling {
+             z-index: 1;
+             /* text-align: center; */
+             background: transparent url("https://image.ibb.co/ir1DE8/twinkling.png") repeat top center;
+             animation: move-twink-back 250s linear infinite;
+         }
+
+         @keyframes move-twink-back {
+             from {
+                 background-position: 0 0;
+             }
+
+             to {
+                 background-position: -10000px 5000px;
+             }
+         }
+
+         html,
+         body {
+            font-family: helvetica, arial, sans-serif;
+          /* margin: 2em; */
+             margin: 0; 
+             height: auto;
+             overflow: hidden;
+         }
+         .grid-container {
+             display: grid;
+             height: 50vh;
+             grid-column-gap: 2px;
+             grid-template-columns: auto auto auto;
+             /* background-color: #2196F3; */
+             border-style: inset;
+              border:2px solid grey;
+              /* padding-left: 20%; */
+             /* the content padding */
+             padding: 150px;
+             background: rgba(255,255,255,0.4);
+
+         }
+
+         h1 {
+          font-style: italic;
+          color: orange;
+          text-align: center;
+
+        }
+        /* All rover images. */
+        img {
+          width: 75%;
+          height: auto;
+          
+        }
+
