@@ -19,13 +19,15 @@
 
          .stars {
              z-index: 0;
-             background: #000 url("https://image.ibb.co/mjnygo/stars.png") repeat top center;
+             /* background: #000 url("https://image.ibb.co/mjnygo/stars.png") repeat top center; */
+             background: #000 url("https://i.ibb.co/xHZXscC/Star-Wall-enhanced.jpg");
          }
 
          .twinkling {
              z-index: 1;
              /* text-align: center; */
-             background: transparent url("https://image.ibb.co/ir1DE8/twinkling.png") repeat top center;
+             /* background: transparent url("https://image.ibb.co/ir1DE8/twinkling.png") repeat top center;*/
+             /*background: transparent url("https://i.ibb.co/XshkMPY/twinkle.png") repeat top center;*/
              animation: move-twink-back 250s linear infinite;
          }
 
@@ -54,11 +56,11 @@
              grid-template-columns: auto auto auto;
              /* background-color: #2196F3; */
              border-style: inset;
-              border:2px solid grey;
+             border:2px solid grey;
               /* padding-left: 20%; */
              /* the content padding */
              padding: 150px;
-             background: rgba(255,255,255,0.4);
+             /*background: rgba(255,255,255,0.4);*/
 
          }
 
