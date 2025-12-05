@@ -49,31 +49,44 @@
              height: auto;
              overflow: hidden;
          }
+         
          .grid-container {
-             display: grid;
+             /*display: grid;*/
              height: 50vh;
-             grid-column-gap: 2px;
-             grid-template-columns: auto auto auto;
+             /*grid-column-gap: 2px;*/
+             /*grid-template-columns: auto auto auto;*/
              /* background-color: #2196F3; */
              border-style: inset;
              border:2px solid grey;
               /* padding-left: 20%; */
              /* the content padding */
-             padding: 150px;
+             /*padding: 150px;*/
+             padding: 15px;
              /*background: rgba(255,255,255,0.4);*/
 
          }
+
+         .container{
+            height: 50vh;
+            border-style: inset;
+            padding: 15px;
+         }
+
+         /* Use the object-fit CSS property on the <img> element to 
+            determine how the image should be resized to fill its 
+            container.
+        */
+         .container img {
+            width: 75%;
+            height: 50vh;
+            object-fit: contain;
+
+        }
 
          h1 {
           font-style: italic;
           color: orange;
           text-align: center;
 
-        }
-        /* All rover images. */
-        img {
-          width: 75%;
-          height: auto;
-          
         }
 

@@ -17,13 +17,38 @@
 <body>
     <div class="stars">
         <div class="twinkling">
-            
             <h1>
-                Live Mars Rover Pictures
+                NASA Picture of the day for
+                <script>
+                        let todayDate = new Date();
+
+                        let modifieddate = "";
+
+                        modifieddate += todayDate.getFullYear() + "-";
+
+                        let specialMonth = todayDate.getMonth();
+                        specialMonth +=1;
+
+                        modifieddate+= specialMonth + "-" + todayDate.getDate();
+
+                        document.write(": "+modifieddate)
+                        
+
+                </script>
             </h1>
-            
+
+
+            <!-- 
             <div class="grid-container">
-                <!-- var imageData2 = "<div><img src=" + linkData2 + "></div>"; -->
+                <img src="https://apod.nasa.gov/apod/image/2512/KXAnd.jpg">
+                
+            </div>
+            -->
+            
+            <div class ="container">
+
+                <!--<img src="https://apod.nasa.gov/apod/image/2512/KXAnd.jpg"> -->
+
             </div>
 
         </div>
